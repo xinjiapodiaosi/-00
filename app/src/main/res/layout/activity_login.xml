@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/login_1"
+    tools:context=".register.LoginActivity">
+
+
+    <LinearLayout
+
+        style="@style/login_2">
+
+        <ImageView
+
+            style="@style/login_Image"
+            android:src="@drawable/ic_launcher_background" />
+
+        <EditText
+
+            android:id="@+id/login_ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBACK"
+            android:hint="@string/login_User" />
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <ImageView
+            style="@style/login_Image"
+            android:src="@drawable/ic_launcher_background" />
+
+        <EditText
+            android:id="@+id/login_ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBACK"
+            android:hint="@string/login_User" />
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/login_li1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/login_tv1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_li2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/login_tv2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_li3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/login_tv3" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_bt1"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/login_bt1" />
+
+
+</LinearLayout>

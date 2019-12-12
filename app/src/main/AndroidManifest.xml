@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.meiji.yangshijie.login">
+
+    <!-- 网络相关权限 -->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.access_wifi_state" />
+    <uses-permission android:name="android.permission.access_network_state" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- 手机震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <!--拍照权限-->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <!--读写SD卡相关权限-->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden"
+        android:icon="@mipmap/lilaoba"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="landscape"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        >
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".User_selectionActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".register.LoginActivity"
+            />
+        <activity android:name=".register.ForgetpasswordActivity" />
+        <activity android:name=".register.RegisterActivity" />
+        <activity android:name=".register.AgreementActivity" />
+
+        <service android:name=".SystemService" />
+
+        <!-- 监听网络状态 -->
+
+        <receiver android:name=".Receiver.NetworkConnectChangedReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 测试Activity -->
+        <activity android:name=".test.TestDatabaseActivity"></activity>
+
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        <activity android:name="com.meiji.ysj.youxidating.Game1Activity"  android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape">
+
+        </activity>
+
+<!--
+
+========拍照相关
+
+-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.meiji.ysj.youxidating.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public"></meta-data>
+        </provider>
+
+
+
+
+    </application>
+
+</manifest>

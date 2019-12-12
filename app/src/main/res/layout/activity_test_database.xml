@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".test.TestDatabaseActivity">
+
+
+    <Button
+        android:onClick="test"
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="增" />
+
+    <Button
+        android:id="@+id/button2"
+        android:onClick="test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删" />
+
+    <Button
+        android:id="@+id/button3"
+        android:onClick="test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查" />
+
+
+    <!--<com.meiji.yangshijie.myapplication_test.View.TestView-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="match_parent" />-->
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.meiji.ysj.youxidating.view.ShapeImageView
+        android:layout_width="150dp"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"
+        android:id="@+id/image1"
+        android:layout_height="250dp"
+        android:src="@mipmap/ic_1"
+        />
+    <com.meiji.ysj.youxidating.view.ShapeImageView
+        android:layout_width="150dp"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"
+        android:id="@+id/image2"
+        android:layout_height="250dp"
+        android:src="@mipmap/ic_1"
+        />
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

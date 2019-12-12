@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorBACK">#999999</color>
+    <color name="agreement_bt1">#438eff</color>
+
+
+    <color name="ddddd">#f31e2e5c</color>
+
+    <color name="ssssss">#ea92abff</color>
+
+
+    <color name="ddddddddd">#566eec</color>
+
+
+    <color name="textcolor">#61C1EA</color>
+
+
+    <color name="Progress1">#b97e32</color>
+
+    <color name="Progress2">#e19e51</color>
+
+    <color name="Progress3">#dfcf54</color>
+
+
+    <color name="Progress4">#ede655</color>
+
+
+    <color name="login">#1C769C</color>
+
+
+    <color name="personal_">#ABE0F1</color>
+
+
+    <color name="recharge_list_tv">#5CE618</color>
+
+
+    <color name="records_list_tv2">#5CE618</color>
+
+
+
+
+
+</resources>

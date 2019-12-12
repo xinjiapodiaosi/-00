@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/game_beijing"
+    tools:context="com.meiji.ysj.youxidating.Game1Activity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/game_bingjng1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/game_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@mipmap/game_touxiang">
+
+            <ImageView
+                android:src="@mipmap/touxiang"
+                android:id="@+id/game_im_touxiang"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp" />
+
+        </LinearLayout>
+
+        <TextView
+
+            android:textSize="10dp"
+            android:id="@+id/game_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/game_layout1"
+            android:text="昵称"
+            android:textColor="#fff"
+           />
+
+        <TextView
+            android:textSize="10dp"
+            android:id="@+id/game_tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_tv_name"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/game_layout1"
+            android:text="ID:888666"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/game_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/game_tv_name"
+            android:background="@mipmap/game_jingbi"
+            android:gravity="center" />
+ v
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="52dp"
+        android:background="@mipmap/game_xiaoxitongzhi"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <TextView
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_marginRight="30dp"
+            android:id="@+id/game_tv_donggao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null" />
+        <ImageView
+           android:layout_marginLeft="-25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/game_gonggao" />
+
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="221dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <FrameLayout
+            android:id="@+id/game_im_z1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/game_z1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/game_im_z2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_im_z1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/game_z2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_im_z1" />
+
+        <ImageView
+            android:id="@+id/game_im_l2"
+            android:layout_width="140dp"
+            android:layout_height="0dp"
+
+            android:layout_toLeftOf="@id/game_im_z2"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/game_l2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/game_im_z1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.625" />
+
+        <ImageView
+            android:id="@+id/game_im_l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toLeftOf="@id/game_im_l2"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/game_l1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/game_im_r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/game_im_r1"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/game_r2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/game_im_r1"
+            android:layout_width="140dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/game_im_z2"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/game_r1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/game_im_z1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/game_tv_gonggao1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="申请成为代理送金币"
+            android:textColor="#FDD481"
+            app:layout_constraintBottom_toBottomOf="@+id/game_im_z1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/game_ll_xiaoxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-50dp"
+            android:background="@mipmap/game_xiaoxi"
+            android:orientation="horizontal" >
+            <TextView
+                android:textSize="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:text="消息"
+                android:textColor="#EECE83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/game_ll_gerenzhongxing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-50dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/game_ll_xiaoxi"
+            android:background="@mipmap/game_gerenzhongxing"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:textSize="8dp"
+                android:layout_gravity="center"
+               android:text="个人中心"
+                android:textColor="#EECE83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/game_ll_sehzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-50dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/game_ll_xiaoxi"
+            android:background="@mipmap/game_shezhi"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textSize="10dp"
+                android:layout_gravity="center"
+                android:text="设置"
+                android:textColor="#EECE83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
